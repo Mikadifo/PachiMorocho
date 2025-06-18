@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 @font-face {
   font-family: "EBGaramond";
   src: url("/EBGaramond.ttf") format("truetype");
@@ -8,7 +10,24 @@
   src: url("/CrimsonPro.ttf") format("truetype");
 }
 
-:root {
+@theme {
+  --font-serif: serif;
+}
+
+@layer utilities {
+  .text-dark {
+    color: #2c2623;
+  }
+
+  .font-heading {
+    font-family: "EBGaramond", serif;
+  }
+
+  .font-body {
+    font-family: "CrimsonPro", serif;
+  }
+}
+
+html {
   background-color: #ffffff;
-  color: #2c2623;
 }

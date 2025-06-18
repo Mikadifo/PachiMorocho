@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import suyukuna from "./assets/suyukuna.webp";
 
 import Navbar from "./layouts/Navbar";
@@ -8,10 +7,18 @@ export default function App() {
   const [current, setCurrent] = useState("home");
 
   return (
-    <div className="app-container">
+    <div className="flex h-screen p-8 max-w-[1440px] w-full mx-auto justify-between gap-20">
       <Navbar />
 
-      {current === "home" ? <img src={suyukuna} alt="Suyukuna" /> : ""}
+      {current === "home" ? (
+        <img
+          className="w-full h-full overflow-hidden object-contain"
+          src={suyukuna}
+          alt="Suyukuna"
+        />
+      ) : (
+        ""
+      )}
     </div>
   );
 }
