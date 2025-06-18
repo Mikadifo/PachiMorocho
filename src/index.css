@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "EBGaramond";
+  src: url("/EBGaramond.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CrimsonPro";
+  src: url("/CrimsonPro.ttf") format("truetype");
+}
+
+:root {
+  background-color: #ffffff;
+  color: #2c2623;
+}
