@@ -8,7 +8,7 @@ export default function Navbar({ route, setRoute }) {
   const [showWorks, setShowWorks] = useState(false);
 
   const handleWorks = () => {
-    setShowWorks(true);
+    setShowWorks(!showWorks);
   };
 
   return (
