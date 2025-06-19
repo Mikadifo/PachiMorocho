@@ -2,7 +2,7 @@ import { useState } from "react";
 import Link from "../components/link";
 import routes from "../constants/routes";
 
-const { WORKS } = routes;
+const { HOME, WORKS, ABOUT, CV, CONTACT } = routes;
 
 export default function Navbar({ route, setRoute }) {
   const [showWorks, setShowWorks] = useState(false);
@@ -13,7 +13,10 @@ export default function Navbar({ route, setRoute }) {
 
   return (
     <div className="flex flex-col text-dark">
-      <h1 className="font-bold font-heading text-[28px] whitespace-nowrap pb-8">
+      <h1
+        className="font-bold font-heading text-[28px] whitespace-nowrap pb-8 cursor-pointer"
+        onClick={() => setRoute(HOME)}
+      >
         Patricio Pachi Morocho
       </h1>
 
@@ -51,13 +54,25 @@ export default function Navbar({ route, setRoute }) {
 
         <ul className="flex justify-between w-full">
           <li>
-            <Link label={"About"} />
+            <Link
+              styles={route === ABOUT ? "text-main" : ""}
+              label={"About"}
+              onClick={() => setRoute(ABOUT)}
+            />
           </li>
           <li>
-            <Link label={"CV"} />
+            <Link
+              styles={route === CV ? "text-main" : ""}
+              label={"CV"}
+              onClick={() => setRoute(CV)}
+            />
           </li>
           <li>
-            <Link label={"Contact"} />
+            <Link
+              styles={route === CONTACT ? "text-main" : ""}
+              label={"Contact"}
+              onClick={() => setRoute(CONTACT)}
+            />
           </li>
         </ul>
       </div>
