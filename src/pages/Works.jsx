@@ -1,21 +1,41 @@
 import arrowIcon from "./../assets/arrowIcon.png";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import worksList from "../data/works";
 
 export default function Works({ year }) {
   const works = worksList.filter((work) => work.year === year);
+  const containerRef = useRef(null);
   const [current, setCurrent] = useState(0);
 
+  const scrollToIndex = (index) => {
+    if (!containerRef.current) return;
+    const slides = containerRef.current.children;
+    if (index < 0 || index >= slides.length) return;
+
+    slides[index].scrollIntoView({ behavior: "smooth", block: "start" });
+    setCurrent(index);
+  };
+
   const next = () => {
-    setCurrent((prev) => (prev + 1) % works.length);
+    scrollToIndex((current + 1) % works.length);
   };
 
   const previous = () => {
-    setCurrent((prev) => (prev - 1 + works.length) % works.length);
+    scrollToIndex((current - 1 + works.length) % works.length);
+  };
+
+  const onScroll = () => {
+    if (!containerRef.current) return;
+    const scrollTop = containerRef.current.scrollTop;
+    const height = window.innerHeight;
+    const index = Math.round(scrollTop / height);
+    if (index !== current) {
+      setCurrent(index);
+    }
   };
 
   return (
-    <div className="flex gap-8 text-dark relative overflow-hidden">
+    <div className="flex gap-8 text-dark">
       <div className="flex flex-col justify-between my-8">
         <button
           className="cursor-pointer hover:opacity-80 size-6"
@@ -32,11 +52,12 @@ export default function Works({ year }) {
       </div>
 
       <div
-        className="transition-transform duration-500 ease-in-out h-full"
-        style={{ transform: `translateY(-${current * 100}%)` }}
+        ref={containerRef}
+        onScroll={onScroll}
+        className="h-full overflow-y-scroll snap-y snap-mandatory scroll-smooth touch-pan-y scrollbar-none"
       >
         {works.map(({ id, img, title }) => (
-          <div key={id} className="h-full">
+          <div key={id} className="h-full w-full snap-center">
             <img className="h-full w-full object-cover" src={img} alt={title} />
           </div>
         ))}
