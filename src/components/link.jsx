@@ -1,8 +1,11 @@
 import linkIcon from "./../assets/linkIcon.svg";
 
-export default function Link({ label }) {
+export default function Link({ label, onClick }) {
   return (
-    <button className="flex gap-1 text-dark font-heading font-bold text-xl cursor-pointer group items-center">
+    <button
+      className="flex gap-1 text-dark font-heading font-bold text-xl cursor-pointer group items-center"
+      onClick={onClick}
+    >
       <img
         src={linkIcon}
         alt="Link Icon"
