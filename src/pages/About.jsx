@@ -15,7 +15,11 @@ export default function About() {
         mollit anim id est laborum.
       </p>
 
-      <img src="" alt="Patricio Pachi Morocho portrait" />
+      <img
+        className="size-80 object-cover"
+        src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Patricio Pachi Morocho portrait"
+      />
 
       <a
         href="https://www.instagram.com/muruchuku/"

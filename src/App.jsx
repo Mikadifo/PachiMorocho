@@ -12,21 +12,23 @@ export default function App() {
   const [route, setRoute] = useState(HOME);
 
   return (
-    <div className="flex flex-col lg:flex-row h-screen p-8 max-w-[1440px] w-full mx-auto justify-between lg:gap-20 2xl:gap-40">
+    <div className="flex flex-col lg:flex-row h-screen p-8 max-w-[1440px] w-full mx-auto justify-between gap-20 2xl:gap-40">
       <Navbar route={route} setRoute={setRoute} />
 
-      {route === HOME && (
+      {route === HOME ? (
         <img
-          className="w-full h-full overflow-hidden object-contain order-3 my-20 lg:my-0"
+          className="w-full h-full overflow-hidden object-contain order-2"
           src={suyukuna}
           alt="Suyukuna"
         />
+      ) : (
+        <div className="order-2">
+          {route === ABOUT && <About />}
+          {route === WORKS["2025"] && <Works year={2025} />}
+          {route === WORKS["2024"] && <Works year={2024} />}
+          {route === CONTACT && <Contact />}
+        </div>
       )}
-
-      {route === ABOUT && <About />}
-      {route === WORKS["2025"] && <Works year={2025} />}
-      {route === WORKS["2024"] && <Works year={2024} />}
-      {route === CONTACT && <Contact />}
     </div>
   );
 }
