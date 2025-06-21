@@ -5,10 +5,15 @@ export default function Contact() {
   };
 
   return (
-    <div className="p-16 flex flex-col items-center gap-16 text-dark justify-center w-full">
-      <h1 className="font-bold font-heading text-[28px]">Contact</h1>
+    <div className="sm:p-16 flex flex-col items-center gap-4 sm:gap-8 lg:gap-16 text-dark justify-center w-full">
+      <h1 className="font-bold font-heading text-2xl sm:text-[28px]">
+        Contact
+      </h1>
 
-      <form onSubmit={handleSubmit} className="w-full flex flex-col gap-8">
+      <form
+        onSubmit={handleSubmit}
+        className="w-full flex flex-col gap-4 sm:gap-8"
+      >
         <label htmlFor="name" className="flex flex-col">
           <span className="text-xl font-bold font-heading mb-2">Name:</span>
           <input

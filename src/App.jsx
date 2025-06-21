@@ -12,7 +12,7 @@ export default function App() {
   const [route, setRoute] = useState(HOME);
 
   return (
-    <div className="flex flex-col lg:flex-row h-screen p-8 max-w-[1440px] w-full mx-auto justify-between gap-20 2xl:gap-40">
+    <div className="flex flex-col lg:flex-row lg:h-screen p-4 sm:p-8 max-w-[1440px] w-full mx-auto justify-between gap-10 sm:gap-20 2xl:gap-40">
       <Navbar route={route} setRoute={setRoute} />
 
       {route === HOME ? (
@@ -22,7 +22,7 @@ export default function App() {
           alt="Suyukuna"
         />
       ) : (
-        <div className="order-2">
+        <div className="order-2 w-full">
           {route === ABOUT && <About />}
           {route === WORKS["2025"] && <Works year={2025} />}
           {route === WORKS["2024"] && <Works year={2024} />}

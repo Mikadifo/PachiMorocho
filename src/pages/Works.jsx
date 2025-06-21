@@ -67,7 +67,7 @@ export default function Works({ year }) {
   );
 
   return (
-    <div className="flex gap-4 xl:gap-8 text-dark flex-col xl:flex-row">
+    <div className="flex gap-4 xl:gap-8 text-dark flex-col xl:flex-row h-screen">
       <div
         ref={containerRef}
         onScroll={onScroll}
@@ -96,7 +96,7 @@ export default function Works({ year }) {
           </div>
         </div>
 
-        <div className="flex flex-col justify-between my-[14px]">
+        <div className="flex flex-col gap-16 justify-center my-[14px]">
           <button
             className="cursor-pointer hover:opacity-80 size-6"
             onClick={previous}
