@@ -22,7 +22,7 @@ export default function App() {
           alt="Suyukuna"
         />
       ) : (
-        <div className="order-2 w-full">
+        <div className="order-2 w-full h-full">
           {route === ABOUT && <About />}
           {route === WORKS["2025"] && <Works year={2025} />}
           {route === WORKS["2024"] && <Works year={2024} />}
