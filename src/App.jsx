@@ -12,12 +12,12 @@ export default function App() {
   const [route, setRoute] = useState(HOME);
 
   return (
-    <div className="flex h-screen p-8 max-w-[1440px] w-full mx-auto justify-between gap-20 2xl:gap-40">
+    <div className="flex flex-col lg:flex-row h-screen p-8 max-w-[1440px] w-full mx-auto justify-between lg:gap-20 2xl:gap-40">
       <Navbar route={route} setRoute={setRoute} />
 
       {route === HOME && (
         <img
-          className="w-full h-full overflow-hidden object-contain"
+          className="w-full h-full overflow-hidden object-contain order-3 my-20 lg:my-0"
           src={suyukuna}
           alt="Suyukuna"
         />
