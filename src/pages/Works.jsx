@@ -34,9 +34,22 @@ export default function Works({ year }) {
     }
   };
 
-  return (
-    <div className="flex gap-8 text-dark">
-      <div className="flex flex-col justify-between my-8">
+  const desktopLayout = (
+    <>
+      <div className="xl:flex flex-col gap-8 justify-center hidden">
+        <h1 className="font-bold font-heading text-2xl">
+          {works[current].title}
+        </h1>
+
+        <div className="max-w-[400px]">
+          <h2 className="mb-2 font-bold font-heading text-base">Materials</h2>
+          <p className="font-normal text-sm opacity-80 leading-5">
+            {works[current].materials}
+          </p>
+        </div>
+      </div>
+
+      <div className="xl:flex flex-col justify-between my-[14px] order-last xl:order-first hidden">
         <button
           className="cursor-pointer hover:opacity-80 size-6"
           onClick={previous}
@@ -50,7 +63,11 @@ export default function Works({ year }) {
           <img src={arrowIcon} alt="Up Arrow Icon" />
         </button>
       </div>
+    </>
+  );
 
+  return (
+    <div className="flex gap-4 xl:gap-8 text-dark flex-col xl:flex-row">
       <div
         ref={containerRef}
         onScroll={onScroll}
@@ -63,16 +80,35 @@ export default function Works({ year }) {
         ))}
       </div>
 
-      <div className="flex flex-col gap-8 justify-center">
-        <h1 className="font-bold font-heading text-2xl">
-          {works[current].title}
-        </h1>
+      {desktopLayout}
 
-        <div className="max-w-[400px]">
-          <h2 className="mb-2 font-bold font-heading text-base">Materials</h2>
-          <p className="font-normal text-sm opacity-80 leading-5">
-            {works[current].materials}
-          </p>
+      <div className="flex xl:hidden gap-16">
+        <div className="flex flex-col gap-4 justify-center">
+          <h1 className="font-bold font-heading text-2xl">
+            {works[current].title}
+          </h1>
+
+          <div className="w-full">
+            <h2 className="mb-2 font-bold font-heading text-base">Materials</h2>
+            <p className="font-normal text-sm opacity-80 leading-5">
+              {works[current].materials}
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col justify-between my-[14px]">
+          <button
+            className="cursor-pointer hover:opacity-80 size-6"
+            onClick={previous}
+          >
+            <img src={arrowIcon} alt="Up Arrow Icon" />
+          </button>
+          <button
+            className="cursor-pointer hover:opacity-80 rotate-180 size-6"
+            onClick={next}
+          >
+            <img src={arrowIcon} alt="Up Arrow Icon" />
+          </button>
         </div>
       </div>
     </div>
