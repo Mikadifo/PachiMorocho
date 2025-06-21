@@ -39,7 +39,7 @@ export default function Contact() {
 
         <button
           type="submit"
-          className="text-white bg-main py-3 px-12 w-fit self-center cursor-pointer hover:opacity-80 mt-8"
+          className="text-white bg-main py-3 px-12 w-fit self-center cursor-pointer hover:opacity-80 mt-8 font-heading text-xl"
         >
           Submit
         </button>
