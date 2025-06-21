@@ -4,6 +4,7 @@ import Navbar from "./layouts/Navbar";
 import routes from "./constants/routes";
 import About from "./pages/About";
 import Works from "./pages/Works";
+import Contact from "./pages/Contact";
 
 const { HOME, WORKS, ABOUT, CV, CONTACT } = routes;
 
@@ -25,6 +26,7 @@ export default function App() {
       {route === ABOUT && <About />}
       {route === WORKS["2025"] && <Works year={2025} />}
       {route === WORKS["2024"] && <Works year={2024} />}
+      {route === CONTACT && <Contact />}
     </div>
   );
 }

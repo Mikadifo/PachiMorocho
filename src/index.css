@@ -19,6 +19,14 @@
     color: #2c2623;
   }
 
+  .bg-dark {
+    background-color: #2c2623;
+  }
+
+  .bg-main {
+    background-color: #fe664a;
+  }
+
   .text-main {
     color: #fe664a;
   }

@@ -2,7 +2,7 @@ import instagramIcon from "./../assets/instagramIcon.svg";
 
 export default function About() {
   return (
-    <div className="p-16 flex flex-col items-center gap-16 text-dark justify-center">
+    <div className="p-16 flex flex-col items-center gap-16 text-dark justify-center w-full">
       <h1 className="font-bold font-heading text-[28px]">About</h1>
 
       <p className="text-xl font-body font-normal leading-8">
