@@ -12,7 +12,7 @@ export default function App() {
   const [route, setRoute] = useState(HOME);
 
   return (
-    <div className="flex h-screen p-8 max-w-[1440px] w-full mx-auto justify-between gap-40">
+    <div className="flex h-screen p-8 max-w-[1440px] w-full mx-auto justify-between gap-20 2xl:gap-40">
       <Navbar route={route} setRoute={setRoute} />
 
       {route === HOME && (

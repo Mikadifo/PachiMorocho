@@ -68,7 +68,7 @@ export default function Works({ year }) {
           {works[current].title}
         </h1>
 
-        <div className="max-w-[240px]">
+        <div className="max-w-[400px]">
           <h2 className="mb-2 font-bold font-heading text-base">Materials</h2>
           <p className="font-normal text-sm opacity-80 leading-5">
             {works[current].materials}
