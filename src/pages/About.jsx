@@ -1,4 +1,5 @@
 import instagramIcon from "./../assets/instagramIcon.svg";
+import about from "./../assets/about.jpeg";
 
 export default function About() {
   return (
@@ -6,18 +7,23 @@ export default function About() {
       <h1 className="font-bold font-heading text-2xl sm:text-[28px]">About</h1>
 
       <p className="text-base sm:text-xl font-body font-normal leading-6 sm:leading-8">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        "Patricio Pachi Morocho (b. 1998) is an artist currently working in the
+        Bronx. He received his BFA from the Rhode Island School of Design in
+        2021 and his MFA from Rutgers University in 2025. He was the 2022 - 2023
+        Artist in Residence for The Latinx Project. His work has been exhibited
+        in solo exhibitions at Micki Meng Gallery, San Francisco in 2022; and at
+        The Latinx Project, New York in 2023. Pachi has recently been awarded
+        the 2025 Zona Maco x Fountainhead Residency Prize. His work focuses on
+        the animistic materiality of the urban landscape through the articles of
+        painting, paper-making, mold-making, incense, plaster, and writing. He
+        seeks the convergences of the profane and sacred in a contemporary age
+        marked by migration, fluidity, and struggle, including that of his
+        family from the Kañari homelands of southern Ecuador."
       </p>
 
       <img
-        className="size-80 object-cover"
-        src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        className="size-80 object-contain"
+        src={about}
         alt="Patricio Pachi Morocho portrait"
       />
 

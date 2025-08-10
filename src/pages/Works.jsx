@@ -73,8 +73,8 @@ export default function Works({ year }) {
         onScroll={onScroll}
         className="h-full overflow-y-scroll snap-y snap-mandatory scroll-smooth touch-pan-y scrollbar-none"
       >
-        {works.map(({ id, img, title }) => (
-          <div key={id} className="h-full w-full snap-center">
+        {works.map(({ img, title }, index) => (
+          <div key={index} className="h-full w-full snap-center">
             <img className="h-full w-full object-cover" src={img} alt={title} />
           </div>
         ))}
