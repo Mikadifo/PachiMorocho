@@ -60,7 +60,7 @@ export default function Works({ year }) {
           className="cursor-pointer hover:opacity-80 rotate-180 size-6"
           onClick={next}
         >
-          <img src={arrowIcon} alt="Up Arrow Icon" />
+          <img src={arrowIcon} alt="Down Arrow Icon" />
         </button>
       </div>
     </>
@@ -75,11 +75,13 @@ export default function Works({ year }) {
       >
         {works.map(({ img, title }, index) => (
           <div key={index} className="h-full w-full snap-center">
-            <img
-              className="h-full w-full object-contain"
-              src={img}
-              alt={title}
-            />
+            <a href={img} target="_blank">
+              <img
+                className="h-full w-full object-contain"
+                src={img}
+                alt={title}
+              />
+            </a>
           </div>
         ))}
       </div>
@@ -111,7 +113,7 @@ export default function Works({ year }) {
             className="cursor-pointer hover:opacity-80 rotate-180 size-6"
             onClick={next}
           >
-            <img src={arrowIcon} alt="Up Arrow Icon" />
+            <img src={arrowIcon} alt="Down Arrow Icon" />
           </button>
         </div>
       </div>
