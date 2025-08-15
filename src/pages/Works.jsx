@@ -27,7 +27,7 @@ export default function Works({ year }) {
   const onScroll = () => {
     if (!containerRef.current) return;
     const scrollTop = containerRef.current.scrollTop;
-    const height = window.innerHeight;
+    const height = containerRef.current.clientHeight;
     const index = Math.round(scrollTop / height);
     if (index !== current) {
       setCurrent(index);
