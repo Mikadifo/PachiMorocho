@@ -75,14 +75,18 @@ export default function Works({ year }) {
       >
         {works.map(({ img, title }, index) => (
           <div key={index} className="h-full w-full snap-center">
-            <img className="h-full w-full object-cover" src={img} alt={title} />
+            <img
+              className="h-full w-full object-contain"
+              src={img}
+              alt={title}
+            />
           </div>
         ))}
       </div>
 
       {desktopLayout}
 
-      <div className="flex xl:hidden gap-16">
+      <div className="flex xl:hidden gap-16 justify-between">
         <div className="flex flex-col gap-4 justify-center">
           <h1 className="font-bold font-heading text-2xl">
             {works[current].title}
