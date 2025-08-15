@@ -4,7 +4,11 @@ import about from "./../assets/about.jpeg";
 export default function About() {
   return (
     <div className="lg:p-16 flex flex-col items-center gap-4 sm:gap-8 lg:gap-16 text-dark justify-center w-full">
-      <h1 className="font-bold font-heading text-2xl sm:text-[28px]">About</h1>
+      <img
+        className="size-80 object-contain"
+        src={about}
+        alt="Patricio Pachi Morocho portrait"
+      />
 
       <p className="text-base sm:text-xl font-body font-normal leading-6 sm:leading-8">
         "Patricio Pachi Morocho (b. 1998) is an artist currently working in the
@@ -20,12 +24,6 @@ export default function About() {
         marked by migration, fluidity, and struggle, including that of his
         family from the Kañari homelands of southern Ecuador."
       </p>
-
-      <img
-        className="size-80 object-contain"
-        src={about}
-        alt="Patricio Pachi Morocho portrait"
-      />
 
       <a
         href="https://www.instagram.com/muruchuku/"
