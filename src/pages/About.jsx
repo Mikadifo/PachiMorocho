@@ -1,5 +1,5 @@
 import instagramIcon from "./../assets/instagramIcon.svg";
-import about from "./../assets/about.jpeg";
+import about from "./../assets/about.webp";
 
 export default function About() {
   return (

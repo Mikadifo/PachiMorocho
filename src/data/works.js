@@ -1,12 +1,12 @@
-import clearlivien2025 from "./../assets/imgs/clearlivien2025.jpg";
-import sayriwinashpa2025 from "./../assets/imgs/sayriwinashpa2025.jpg";
-import clearchuqui2025 from "./../assets/imgs/clearchuqui2025.jpg";
-import divinepunushka2024 from "./../assets/imgs/divinepunushka2024.jpg";
-import emilymi2024 from "./../assets/imgs/emilymi2024.jpg";
-import punuychik from "./../assets/imgs/6S5A0981_2024.jpg";
-import selfPortrait2024 from "./../assets/imgs/Muruchu_Selfportrait2024.jpg";
-import lsp2024 from "./../assets/imgs/LSP2024.jpg";
-import dnpbu2024 from "./../assets/imgs/DNPBU2024.jpg";
+import clearlivien2025 from "./../assets/imgs/clearlivien2025.webp";
+import sayriwinashpa2025 from "./../assets/imgs/sayriwinashpa2025.webp";
+import clearchuqui2025 from "./../assets/imgs/clearchuqui2025.webp";
+import divinepunushka2024 from "./../assets/imgs/divinepunushka2024.webp";
+import emilymi2024 from "./../assets/imgs/emilymi2024.webp";
+import punuychik from "./../assets/imgs/6S5A0981_2024.webp";
+import selfPortrait2024 from "./../assets/imgs/Muruchu_Selfportrait2024.webp";
+import lsp2024 from "./../assets/imgs/LSP2024.webp";
+import dnpbu2024 from "./../assets/imgs/DNPBU2024.webp";
 
 const worksList = [
   {
