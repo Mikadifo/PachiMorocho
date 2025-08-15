@@ -79,6 +79,7 @@ export default function Works({ year }) {
               <img
                 className="h-full w-full object-contain"
                 src={img}
+                loading="lazy"
                 alt={title}
               />
             </a>
