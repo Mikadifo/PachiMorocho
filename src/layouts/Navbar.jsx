@@ -20,7 +20,7 @@ export default function Navbar({ route, setRoute }) {
         <img
           src={logo}
           alt="Pachi Morocho Logo"
-          className="font-bold font-heading text-[28px] whitespace-nowrap pb-8 cursor-pointer mx-auto lg:mx-0 h-20 sm:h-24"
+          className="font-bold font-heading text-[28px] whitespace-nowrap pb-8 cursor-pointer mx-auto lg:mx-0 h-28 2xl:h-24"
           onClick={() => setRoute(HOME)}
         />
 

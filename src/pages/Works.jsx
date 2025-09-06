@@ -36,17 +36,17 @@ export default function Works({ year }) {
 
   const desktopLayout = (
     <>
-      <div className="xl:flex flex-col gap-8 justify-center hidden">
+      <div className="xl:flex flex-col gap-4 justify-center hidden">
         <h1 className="font-bold font-heading text-2xl">
           {works[current].title}
         </h1>
 
-        <div className="max-w-[400px]">
-          <h2 className="mb-2 font-bold font-heading text-base">Materials</h2>
-          <p className="font-normal text-sm opacity-80 leading-5">
-            {works[current].materials}
-          </p>
-        </div>
+        <p className="font-normal text-base opacity-80 leading-5 max-w-[400px] font-heading">
+          {works[current].materials}
+          <br />
+          <br />
+          Size: {works[current].size}
+        </p>
       </div>
 
       <div className="xl:flex flex-col justify-between my-[14px] order-last xl:order-first hidden">
@@ -95,12 +95,12 @@ export default function Works({ year }) {
             {works[current].title}
           </h1>
 
-          <div className="w-full">
-            <h2 className="mb-2 font-bold font-heading text-base">Materials</h2>
-            <p className="font-normal text-sm opacity-80 leading-5">
-              {works[current].materials}
-            </p>
-          </div>
+          <p className="font-normal text-base opacity-80 leading-5 font-heading">
+            {works[current].materials}
+            <br />
+            <br />
+            {works[current].size}
+          </p>
         </div>
 
         <div className="flex flex-col gap-8 my-[14px]">
