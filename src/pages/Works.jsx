@@ -42,10 +42,10 @@ export default function Works({ year }) {
         </h1>
 
         <p className="font-normal text-base opacity-80 leading-5 max-w-[400px] font-heading">
-          {works[current].materials}
+          <span className="italic">{works[current].materials}</span>
           <br />
           <br />
-          Size: {works[current].size}
+          {works[current].size}
         </p>
       </div>
 
@@ -96,7 +96,7 @@ export default function Works({ year }) {
           </h1>
 
           <p className="font-normal text-base opacity-80 leading-5 font-heading">
-            {works[current].materials}
+            <span className="italic">{works[current].materials}</span>
             <br />
             <br />
             {works[current].size}
