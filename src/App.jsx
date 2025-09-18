@@ -15,7 +15,7 @@ export default function App() {
   const [hideRain, setHideRain] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setHideRain(true), 26000);
+    const timer = setTimeout(() => setHideRain(true), 25000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -34,7 +34,7 @@ export default function App() {
           <img
             src={redRain}
             alt="Red Rain GIF"
-            className={`-z-10 fixed inset-0 w-full h-full object-cover opacity-20 ${hideRain ? "hidden" : ""}`}
+            className={`-z-10 fixed inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-out ${hideRain ? "opacity-0" : "opacity-85"}`}
           />
         </>
       ) : (
