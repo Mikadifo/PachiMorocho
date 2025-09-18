@@ -21,7 +21,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row lg:h-screen p-4 sm:p-8 max-w-[1440px] w-full mx-auto justify-between gap-10 sm:gap-20 2xl:gap-40">
+    <div className="flex flex-col lg:flex-row md:h-screen p-4 sm:p-8 max-w-[1440px] w-full mx-auto justify-between gap-10 sm:gap-20 2xl:gap-40">
       <Navbar route={route} setRoute={setRoute} />
 
       {route === HOME ? (
