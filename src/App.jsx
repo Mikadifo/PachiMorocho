@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import suyukuna from "./assets/suyukuna.webp";
+import redRain from "./assets/redRain.gif";
 import Navbar from "./layouts/Navbar";
 import routes from "./constants/routes";
 import About from "./pages/About";
@@ -11,17 +12,31 @@ const { HOME, WORKS, ABOUT, CV, CONTACT } = routes;
 
 export default function App() {
   const [route, setRoute] = useState(HOME);
+  const [hideRain, setHideRain] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setHideRain(true), 26000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <div className="flex flex-col lg:flex-row lg:h-screen p-4 sm:p-8 max-w-[1440px] w-full mx-auto justify-between gap-10 sm:gap-20 2xl:gap-40">
       <Navbar route={route} setRoute={setRoute} />
 
       {route === HOME ? (
-        <img
-          className="w-full h-full overflow-hidden object-contain order-2"
-          src={suyukuna}
-          alt="Suyukuna"
-        />
+        <>
+          <img
+            className="w-full h-full overflow-hidden object-contain order-2 -z-20 relative"
+            src={suyukuna}
+            alt="Suyukuna"
+          />
+          <img
+            src={redRain}
+            alt="Red Rain GIF"
+            className={`-z-10 fixed inset-0 w-full h-full object-cover opacity-20 ${hideRain ? "hidden" : ""}`}
+          />
+        </>
       ) : (
         <div className="order-2 w-full h-full">
           {route === ABOUT && <About />}
