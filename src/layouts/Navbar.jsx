@@ -50,9 +50,6 @@ export default function Navbar({ route, setRoute }) {
               ""
             )}
           </li>
-          <li>
-            <Link label={"Writings"} />
-          </li>
         </ul>
       </div>
 
@@ -69,13 +66,6 @@ export default function Navbar({ route, setRoute }) {
             styles={route === CV ? "text-main" : ""}
             label={"CV"}
             onClick={() => setRoute(CV)}
-          />
-        </li>
-        <li>
-          <Link
-            styles={route === CONTACT ? "text-main" : ""}
-            label={"Contact"}
-            onClick={() => setRoute(CONTACT)}
           />
         </li>
       </ul>
