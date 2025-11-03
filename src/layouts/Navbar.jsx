@@ -56,7 +56,7 @@ export default function Navbar({ route, setRoute }) {
         </ul>
       </div>
 
-      <ul className="flex justify-center lg:justify-between w-full order-last lg:order-none gap-8">
+      <ul className="flex justify-center lg:justify-between w-full order-last lg:order-none gap-8 pb-8 lg:pb-0">
         <li>
           <Link
             styles={route === ABOUT ? "text-main" : ""}
