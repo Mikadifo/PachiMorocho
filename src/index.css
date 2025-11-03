@@ -10,6 +10,11 @@
   src: url("/CrimsonPro.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "OpenSans";
+  src: url("/OpenSans.ttf") format("truetype");
+}
+
 @theme {
   --font-serif: serif;
 }
@@ -32,11 +37,11 @@
   }
 
   .font-heading {
-    font-family: "EBGaramond", serif;
+    font-family: "OpenSans", serif;
   }
 
   .font-body {
-    font-family: "CrimsonPro", serif;
+    font-family: "OpenSans", serif;
   }
 }
 
