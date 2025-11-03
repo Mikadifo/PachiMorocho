@@ -28,11 +28,11 @@ export default function Contact() {
     setLoading(true);
     evt.preventDefault();
 
-    //if (!captchaToken) {
-    //setData({ error: "Please complete captcha" });
-    //setLoading(false);
-    //return;
-    //}
+    if (!captchaToken) {
+      setData({ error: "Please complete captcha" });
+      setLoading(false);
+      return;
+    }
 
     const form = evt.currentTarget;
     const spam = form.elements.namedItem("_gotcha");
