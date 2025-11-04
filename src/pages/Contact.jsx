@@ -110,7 +110,7 @@ export default function Contact() {
 
   return (
     <div className="sm:p-16 flex flex-col items-center gap-4 sm:gap-8 lg:gap-16 text-dark justify-center w-full">
-      <h1 className="font-bold font-heading text-2xl sm:text-[28px]">
+      <h1 className="font-normal font-heading text-2xl sm:text-[28px]">
         Contact
       </h1>
 
@@ -119,7 +119,7 @@ export default function Contact() {
         className="w-full flex flex-col gap-4 sm:gap-8"
       >
         <label htmlFor="name" className="flex flex-col">
-          <span className="text-xl font-bold font-heading mb-2">Name:</span>
+          <span className="text-xl font-normal font-heading mb-2">Name:</span>
           <input
             type="text"
             id="name"
@@ -130,7 +130,7 @@ export default function Contact() {
           />
         </label>
         <label htmlFor="email" className="flex flex-col">
-          <span className="text-xl font-bold font-heading mb-2">Email:</span>
+          <span className="text-xl font-normal font-heading mb-2">Email:</span>
           <input
             type="email"
             id="email"
@@ -141,7 +141,9 @@ export default function Contact() {
           />
         </label>
         <label htmlFor="message" className="flex flex-col">
-          <span className="text-xl font-bold font-heading mb-2">Message:</span>
+          <span className="text-xl font-normal font-heading mb-2">
+            Message:
+          </span>
           <textarea
             id="message"
             name="message"

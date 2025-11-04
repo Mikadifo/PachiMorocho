@@ -20,18 +20,18 @@ export default function Navbar({ route, setRoute }) {
         <img
           src={logo}
           alt="Pachi Morocho Logo"
-          className="pb-8 cursor-pointer mx-auto lg:mx-0 h-28 2xl:h-24"
+          className="pb-8 cursor-pointer mx-auto lg:mx-0 h-20 2xl:h-20"
           onClick={() => setRoute(HOME)}
         />
 
         <ul className="flex flex-row lg:flex-col gap-16 lg:gap-4 order-first lg:order-none justify-center">
           <li>
-            <Link label={"Works"} onClick={handleWorks} />
+            <Link label={"works"} onClick={handleWorks} />
             {showWorks ? (
-              <ul className="text-base font-heading flex flex-col gap-2 ms-4 mt-2">
+              <ul className="font-thin text-base font-heading flex flex-col gap-2 ms-4 mt-2">
                 <li>
                   <button
-                    className={`${route === WORKS["2025"] ? "text-main font-bold" : "text-dark hover:opacity-80 cursor-pointer"}`}
+                    className={`${route === WORKS["2025"] ? "text-main font-normal" : "text-dark hover:opacity-80 cursor-pointer"}`}
                     onClick={() => setRoute(WORKS["2025"])}
                   >
                     2025 - 2026
@@ -39,7 +39,7 @@ export default function Navbar({ route, setRoute }) {
                 </li>
                 <li>
                   <button
-                    className={`${route === WORKS["2024"] ? "text-main font-bold" : "text-dark hover:opacity-80 cursor-pointer"}`}
+                    className={`${route === WORKS["2024"] ? "text-main font-normal" : "text-dark hover:opacity-80 cursor-pointer"}`}
                     onClick={() => setRoute(WORKS["2024"])}
                   >
                     2024 - 2025
@@ -51,7 +51,7 @@ export default function Navbar({ route, setRoute }) {
             )}
           </li>
           <li>
-            <Link label={"Writings"} />
+            <Link label={"writings"} />
           </li>
         </ul>
       </div>
@@ -60,21 +60,21 @@ export default function Navbar({ route, setRoute }) {
         <li>
           <Link
             styles={route === ABOUT ? "text-main" : ""}
-            label={"About"}
+            label={"about"}
             onClick={() => setRoute(ABOUT)}
           />
         </li>
         <li>
           <Link
             styles={route === CV ? "text-main" : ""}
-            label={"CV"}
+            label={"cv"}
             onClick={() => setRoute(CV)}
           />
         </li>
         <li>
           <Link
             styles={route === CONTACT ? "text-main" : ""}
-            label={"Contact"}
+            label={"contact"}
             onClick={() => setRoute(CONTACT)}
           />
         </li>

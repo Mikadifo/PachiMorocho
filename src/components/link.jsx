@@ -3,7 +3,7 @@ import linkIcon from "./../assets/linkIcon.svg";
 export default function Link({ label, onClick, styles }) {
   return (
     <button
-      className={`flex gap-1 text-dark font-heading font-semibold text-lg cursor-pointer group items-center ${styles}`}
+      className={`flex gap-1 text-dark font-heading font-normal text-lg cursor-pointer group items-center ${styles}`}
       onClick={onClick}
     >
       <img

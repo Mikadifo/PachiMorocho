@@ -10,7 +10,7 @@ export default function About() {
         alt="Patricio Pachi Morocho portrait"
       />
 
-      <p className="text-base sm:text-xl font-body font-normal leading-6 sm:leading-8 text-center">
+      <p className="text-base sm:text-xl font-body font-light leading-6 sm:leading-8 text-center">
         Patricio "Pachi" Morocho (b. 1998) is an artist currently working in the
         Bronx. He received his BFA from the Rhode Island School of Design in
         2021 and his MFA from Rutgers University in 2025. He was the 2022 - 2023
