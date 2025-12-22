@@ -7,6 +7,10 @@ import punuychik from "./../assets/imgs/6S5A0981_2024.webp";
 import selfPortrait2024 from "./../assets/imgs/Muruchu_Selfportrait2024.webp";
 import lsp2024 from "./../assets/imgs/LSP2024.webp";
 import dnpbu2024 from "./../assets/imgs/DNPBU2024.webp";
+import img1194randall2 from "./../assets/imgs/1194randall2.webp";
+import img6S5A1092 from "./../assets/imgs/6S5A1092.webp";
+import img1194randall1 from "./../assets/imgs/1194randall1.webp";
+import img1194CLOSET from "./../assets/imgs/1194CLOSET.webp";
 
 const worksList = [
   {
@@ -80,6 +84,38 @@ const worksList = [
     materials:
       "Acrylic, watercolor and amate on paper framed with fabric, embroidery, feathers, photograph, and Eupatorium Perfolatum",
     size: "22 x 25 inches",
+  },
+  {
+    img: img1194randall2,
+    title: "1194 Randall Avenue",
+    year: 2025,
+    materials:
+      "Oil and recovered fabric on a cotton paper pulp and plaster cast made from a piece of a former building",
+    size: "8.5 x 9 inches",
+  },
+  {
+    img: img6S5A1092,
+    title: "1194 Randall Avenue",
+    year: 2025,
+    materials:
+      "Oil and recovered fabric on a cotton paper pulp and plaster cast made from a piece of a former building",
+    size: "8.5 x 9 inches",
+  },
+  {
+    img: img1194randall1,
+    title: "1194 Randall Avenue",
+    year: 2025,
+    materials:
+      "Oil and recovered fabric on a cotton paper pulp and plaster cast made from a piece of a former building",
+    size: "8.5 x 9 inches",
+  },
+  {
+    img: img1194CLOSET,
+    title: "1194 Randall Avenue",
+    year: 2025,
+    materials:
+      "Oil and recovered fabric on a cotton paper pulp and plaster cast made from a piece of a former building",
+    size: "8.5 x 9 inches",
   },
 ];
 
