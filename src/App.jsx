@@ -32,8 +32,6 @@ export default function App() {
             alt="Suyukuna"
           />
 
-          {!hideRain && <RainStorm />}
-
           {/*
           <img
             src={redRain}

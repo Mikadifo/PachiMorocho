@@ -1,4 +1,4 @@
-import arrowIcon from "./../assets/arrowIcon.png";
+import arrowIcon from "./../assets/arrowIcon.webp";
 import { useRef, useState } from "react";
 import worksList from "../data/works";
 

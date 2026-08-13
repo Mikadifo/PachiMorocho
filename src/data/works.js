@@ -11,6 +11,11 @@ import img1194randall2 from "./../assets/imgs/1194randall2.webp";
 import img6S5A1092 from "./../assets/imgs/6S5A1092.webp";
 import img1194randall1 from "./../assets/imgs/1194randall1.webp";
 import img1194CLOSET from "./../assets/imgs/1194CLOSET.webp";
+import revolt222026 from "./../assets/imgs/revolt-2-2_2026.webp";
+import revolt32026 from "./../assets/imgs/revolt-3_2026.webp";
+import elder42026 from "./../assets/imgs/ELDER4_2026.webp";
+import elder422026 from "./../assets/imgs/ELDER4-2_2026.webp";
+import elder432026 from "./../assets/imgs/ELDER4-3_2026.webp";
 
 const worksList = [
   {
