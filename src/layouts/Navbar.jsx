@@ -2,7 +2,7 @@ import { useState } from "react";
 import Link from "../components/link";
 import routes from "../constants/routes";
 import useIsDesktop from "../hooks/isDesktop";
-import logo from "./../assets/logo.png";
+import logo from "./../assets/logo.webp";
 
 const { HOME, WORKS, ABOUT, CV, CONTACT } = routes;
 
