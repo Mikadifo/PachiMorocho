@@ -24,6 +24,10 @@
     color: #2c2623;
   }
 
+  .text-red {
+    color: #bd1414;
+  }
+
   .bg-dark {
     background-color: #2c2623;
   }
@@ -46,7 +50,7 @@
 }
 
 html {
-  background-color: #ffffff;
+  background-color: #241f1c;
 }
 
 .scrollbar-none::-webkit-scrollbar {
