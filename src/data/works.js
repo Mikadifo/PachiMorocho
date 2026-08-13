@@ -118,7 +118,7 @@ const worksList = [
   },
   {
     img: revolt222026,
-    title: "Revolt of the Object (#1)",
+    title: "Revolt of the Objects (#1)",
     year: 2026,
     materials:
       "Copper and red brass metalpoint on hand made paper formed from Miami detritus. Primed with bone ash.",
@@ -126,7 +126,7 @@ const worksList = [
   },
   {
     img: revolt32026,
-    title: "Revolt of the Object (#2)",
+    title: "Revolt of the Objects (#2)",
     year: 2026,
     materials:
       "Copper and red brass metalpoint on hand made paper formed from Miami detritus. Primed with bone ash.",
