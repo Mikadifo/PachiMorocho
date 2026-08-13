@@ -3,7 +3,7 @@ import about from "./../assets/about.webp";
 
 export default function About() {
   return (
-    <div className="lg:p-16 flex flex-col items-center gap-4 sm:gap-8 lg:gap-16 text-dark justify-center w-full">
+    <div className="lg:p-16 flex flex-col items-center gap-4 sm:gap-8 lg:gap-16 text-white justify-center w-full">
       <img
         className="size-80 object-contain"
         src={about}

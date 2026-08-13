@@ -31,7 +31,7 @@ export default function Navbar({ route, setRoute }) {
               <ul className="font-thin text-base font-heading flex flex-col gap-2 ms-4 mt-2">
                 <li>
                   <button
-                    className={`${route === WORKS["2025"] ? "text-main font-normal" : "text-dark hover:opacity-80 cursor-pointer"}`}
+                    className={`${route === WORKS["2025"] ? "text-main font-normal" : "text-white hover:opacity-80 cursor-pointer"}`}
                     onClick={() => setRoute(WORKS["2025"])}
                   >
                     2025 - 2026
@@ -39,7 +39,7 @@ export default function Navbar({ route, setRoute }) {
                 </li>
                 <li>
                   <button
-                    className={`${route === WORKS["2024"] ? "text-main font-normal" : "text-dark hover:opacity-80 cursor-pointer"}`}
+                    className={`${route === WORKS["2024"] ? "text-main font-normal" : "text-white hover:opacity-80 cursor-pointer"}`}
                     onClick={() => setRoute(WORKS["2024"])}
                   >
                     2024 - 2025
@@ -84,7 +84,7 @@ export default function Navbar({ route, setRoute }) {
 
   if (isDesktop) {
     return (
-      <div className="flex flex-col text-dark">
+      <div className="flex flex-col text-white">
         <div className="flex flex-col justify-between h-full">
           {navbarContent}
         </div>

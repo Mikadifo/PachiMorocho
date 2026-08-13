@@ -109,7 +109,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="sm:p-16 flex flex-col items-center gap-4 sm:gap-8 lg:gap-16 text-dark justify-center w-full">
+    <div className="sm:p-16 flex flex-col items-center gap-4 sm:gap-8 lg:gap-16 text-white justify-center w-full">
       <h1 className="font-normal font-heading text-2xl sm:text-[28px]">
         Contact
       </h1>

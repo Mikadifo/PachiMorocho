@@ -67,7 +67,7 @@ export default function Works({ year }) {
   );
 
   return (
-    <div className="flex gap-4 xl:gap-8 text-dark flex-col xl:flex-row h-[800px] lg:h-full">
+    <div className="flex gap-4 xl:gap-8 text-white flex-col xl:flex-row h-[800px] lg:h-full">
       <div
         ref={containerRef}
         onScroll={onScroll}
