@@ -159,7 +159,7 @@ export default function Contact() {
         <div className="self-center text-center">
           <button
             type="submit"
-            className="text-white bg-main py-3 px-12 w-fit cursor-pointer hover:opacity-80 mt-8 font-heading text-xl disabled:opacity-50 disabled:cursor-not-allowed"
+            className="text-dark bg-[#aab4c8] py-3 px-12 w-fit cursor-pointer hover:opacity-80 mt-8 font-heading text-xl disabled:opacity-50 disabled:cursor-not-allowed"
             disabled={loading}
           >
             {loading ? "Sending Email..." : "Submit"}

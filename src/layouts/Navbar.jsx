@@ -34,7 +34,7 @@ export default function Navbar({ route, setRoute }) {
                     className={`${route === WORKS["2025"] ? "text-main font-normal" : "text-white hover:opacity-80 cursor-pointer"}`}
                     onClick={() => setRoute(WORKS["2025"])}
                   >
-                    2025 - 2026
+                    2026 / 2027
                   </button>
                 </li>
                 <li>
@@ -42,7 +42,7 @@ export default function Navbar({ route, setRoute }) {
                     className={`${route === WORKS["2024"] ? "text-main font-normal" : "text-white hover:opacity-80 cursor-pointer"}`}
                     onClick={() => setRoute(WORKS["2024"])}
                   >
-                    2024 - 2025
+                    2024 / 2025
                   </button>
                 </li>
               </ul>

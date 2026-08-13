@@ -122,6 +122,43 @@ const worksList = [
       "Oil and recovered fabric on a cotton paper pulp and plaster cast made from a piece of a former building",
     size: "8.5 x 9 inches",
   },
+  {
+    img: revolt222026,
+    title: "Revolt of the Object (#1)",
+    year: 2026,
+    materials:
+      "Copper and red brass metalpoint on hand made paper formed from Miami detritus. Primed with bone ash.",
+    size: "8.5 x 9 inches",
+  },
+  {
+    img: revolt32026,
+    title: "Revolt of the Object (#2)",
+    year: 2026,
+    materials:
+      "Copper and red brass metalpoint on hand made paper formed from Miami detritus. Primed with bone ash.",
+    size: "8.5 x 9 inches",
+  },
+  {
+    img: elder432026,
+    title: "Elder Avenue Station (#4)",
+    year: 2026,
+    materials: "Oil on a plaster cast of a piece of a former building",
+    size: "8.5 x 9 inches",
+  },
+  {
+    img: elder422026,
+    title: "Elder Avenue Station (#4)",
+    year: 2026,
+    materials: "Oil on a plaster cast of a piece of a former building",
+    size: "8.5 x 9 inches",
+  },
+  {
+    img: elder42026,
+    title: "Elder Avenue Station (#4)",
+    year: 2026,
+    materials: "Oil on a plaster cast of a piece of a former building",
+    size: "8.5 x 9 inches",
+  },
 ];
 
 export default worksList;
