@@ -7,21 +7,34 @@ import About from "./pages/About";
 import Works from "./pages/Works";
 import Contact from "./pages/Contact";
 import Cv from "./pages/Cv";
+import StormRain from "./components/StormRain";
 
 const { HOME, WORKS, ABOUT, CV, CONTACT } = routes;
 
 export default function App() {
   const [route, setRoute] = useState(HOME);
-  const [hideRain, setHideRain] = useState(false);
+  const [introState, setIntroState] = useState("dark");
 
-  useEffect(() => {
-    const timer = setTimeout(() => setHideRain(true), 25000);
-
-    return () => clearTimeout(timer);
-  }, []);
+  const handleReveal = () => {
+    setIntroState("transparent");
+    setTimeout(() => {
+      setIntroState("fading");
+      setTimeout(() => {
+        setIntroState("done");
+      }, 500);
+    }, 3000);
+  };
 
   return (
-    <div className="flex flex-col lg:flex-row md:h-screen p-4 sm:p-8 max-w-[1440px] w-full mx-auto justify-between gap-10 sm:gap-20 2xl:gap-40">
+    <>
+      {introState !== "done" && (
+        <div 
+          className={`fixed inset-0 z-50 transition-all duration-500 ${introState === "dark" ? "pointer-events-auto" : "pointer-events-none"} ${introState === "dark" ? "bg-[#241f1c]" : "bg-transparent"} ${introState === "fading" ? "opacity-0" : "opacity-100"}`}
+        >
+          <StormRain onReveal={handleReveal} />
+        </div>
+      )}
+      <div className="flex flex-col lg:flex-row md:h-screen p-4 sm:p-8 max-w-[1440px] w-full mx-auto justify-between gap-10 sm:gap-20 2xl:gap-40">
       <Navbar route={route} setRoute={setRoute} />
 
       {route === HOME ? (
@@ -31,16 +44,6 @@ export default function App() {
             src={suyukuna}
             alt="Suyukuna"
           />
-
-          {!hideRain && <RainStorm />}
-
-          {/*
-          <img
-            src={redRain}
-            alt="Red Rain GIF"
-            className={`-z-10 fixed inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-out ${hideRain ? "opacity-0" : "opacity-85"}`}
-          />
-	    */}
         </>
       ) : (
         <div className="order-2 w-full h-full">
@@ -52,5 +55,6 @@ export default function App() {
         </div>
       )}
     </div>
+    </>
   );
 }
