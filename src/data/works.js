@@ -16,6 +16,9 @@ import revolt32026 from "./../assets/imgs/revolt-3_2026.webp";
 import elder42026 from "./../assets/imgs/ELDER4_2026.webp";
 import elder422026 from "./../assets/imgs/ELDER4-2_2026.webp";
 import elder432026 from "./../assets/imgs/ELDER4-3_2026.webp";
+import ElderA22026 from "./../assets/imgs/ElderA22026.webp";
+import Elder12026 from "./../assets/imgs/Elder12026.webp";
+import Elder32026 from "./../assets/imgs/Elder32026.webp";
 
 const worksList = [
   {
@@ -47,7 +50,7 @@ const worksList = [
     title: "Ishkayniki Umasapa: Divineka hatun urkushina rasushka puñukun",
     year: 2024,
     materials:
-      "Medium: Oil on handmade cotton paper embedded with postcard and bottle cap framed by fabric, embroidery, and lenticular keychain",
+      "Oil on handmade cotton paper embedded with postcard and bottle cap framed by fabric, embroidery, and lenticular keychain",
     size: "21.5 x 16 inches",
   },
   {
@@ -128,7 +131,7 @@ const worksList = [
     year: 2026,
     materials:
       "Copper and red brass metalpoint on hand made paper formed from Miami detritus. Primed with bone ash.",
-    size: "8.5 x 9 inches",
+    size: "8 x 6.5 inches",
   },
   {
     img: revolt32026,
@@ -136,6 +139,29 @@ const worksList = [
     year: 2026,
     materials:
       "Copper and red brass metalpoint on hand made paper formed from Miami detritus. Primed with bone ash.",
+    size: "8 x 6.5 inches",
+  },
+  {
+    img: Elder12026,
+    title: "Elder Avenue Station (#1)",
+    year: 2026,
+    materials:
+      "Oil and concrete fragment on plaster cast made from a piece of a former building",
+    size: "8.5 x 9 inches",
+  },
+  {
+    img: ElderA22026,
+    title: "Elder Avenue Station (#2)",
+    year: 2026,
+    materials: "Oil on a plaster cast of a piece of a former building",
+    size: "8.5 x 9 inches",
+  },
+  {
+    img: Elder32026,
+    title: "Elder Avenue Station (#3)",
+    year: 2026,
+    materials:
+      "Oil and concrete fragment on plaster cast made from a piece of a former building",
     size: "8.5 x 9 inches",
   },
   {
@@ -143,21 +169,21 @@ const worksList = [
     title: "Elder Avenue Station (#4)",
     year: 2026,
     materials: "Oil on a plaster cast of a piece of a former building",
-    size: "8.5 x 9 inches",
+    size: "9.75 x 7.75 x 2 inches",
   },
   {
     img: elder422026,
     title: "Elder Avenue Station (#4)",
     year: 2026,
     materials: "Oil on a plaster cast of a piece of a former building",
-    size: "8.5 x 9 inches",
+    size: "9.75 x 7.75 x 2 inches",
   },
   {
     img: elder42026,
     title: "Elder Avenue Station (#4)",
     year: 2026,
     materials: "Oil on a plaster cast of a piece of a former building",
-    size: "8.5 x 9 inches",
+    size: "9.75 x 7.75 x 2 inches",
   },
 ];
 
