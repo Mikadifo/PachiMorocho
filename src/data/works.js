@@ -1,6 +1,5 @@
 import clearlivien2025 from "./../assets/imgs/clearlivien2025.webp";
 import sayriwinashpa2025 from "./../assets/imgs/sayriwinashpa2025.webp";
-import clearchuqui2025 from "./../assets/imgs/clearchuqui2025.webp";
 import divinepunushka2024 from "./../assets/imgs/divinepunushka2024.webp";
 import emilymi2024 from "./../assets/imgs/emilymi2024.webp";
 import punuychik from "./../assets/imgs/6S5A0981_2024.webp";
@@ -22,20 +21,44 @@ import Elder32026 from "./../assets/imgs/Elder32026.webp";
 
 const worksList = [
   {
+    img: img1194randall2,
+    title: "1194 Randall Avenue",
+    year: 2025,
+    materials:
+      "Oil and recovered fabric on a cotton paper pulp and plaster cast made from a piece of a former building",
+    size: "8.5 x 9 inches",
+  },
+  {
+    img: img6S5A1092,
+    title: "1194 Randall Avenue",
+    year: 2025,
+    materials:
+      "Oil and recovered fabric on a cotton paper pulp and plaster cast made from a piece of a former building",
+    size: "8.5 x 9 inches",
+  },
+  {
+    img: img1194randall1,
+    title: "1194 Randall Avenue",
+    year: 2025,
+    materials:
+      "Oil and recovered fabric on a cotton paper pulp and plaster cast made from a piece of a former building",
+    size: "8.5 x 9 inches",
+  },
+  {
+    img: img1194CLOSET,
+    title: "1194 Randall Avenue",
+    year: 2025,
+    materials:
+      "Oil and recovered fabric on a cotton paper pulp and plaster cast made from a piece of a former building",
+    size: "8.5 x 9 inches",
+  },
+  {
     img: sayriwinashpa2025,
     title: "40.5236801, -74.4317850 on June 1st & June 10th",
     year: 2025,
     materials:
       "Oil on cotton paper pulp and plaster cast of asphalt with embedded construction netting",
     size: "5.75 x 4.5 inches",
-  },
-  {
-    img: clearchuqui2025,
-    title: "@CHUQUICHINCHAY",
-    year: 2025,
-    materials:
-      "Oil on handmade cotton paper embedded with photograph and lenticular object framed by fabric, embroidery, maca root, mugwort, photographs, and lenticular photographs",
-    size: "95.5 x 117.5 inches",
   },
   {
     img: clearlivien2025,
@@ -92,38 +115,6 @@ const worksList = [
     materials:
       "Acrylic, watercolor and amate on paper framed with fabric, embroidery, feathers, photograph, and Eupatorium Perfolatum",
     size: "22 x 25 inches",
-  },
-  {
-    img: img1194randall2,
-    title: "1194 Randall Avenue",
-    year: 2025,
-    materials:
-      "Oil and recovered fabric on a cotton paper pulp and plaster cast made from a piece of a former building",
-    size: "8.5 x 9 inches",
-  },
-  {
-    img: img6S5A1092,
-    title: "1194 Randall Avenue",
-    year: 2025,
-    materials:
-      "Oil and recovered fabric on a cotton paper pulp and plaster cast made from a piece of a former building",
-    size: "8.5 x 9 inches",
-  },
-  {
-    img: img1194randall1,
-    title: "1194 Randall Avenue",
-    year: 2025,
-    materials:
-      "Oil and recovered fabric on a cotton paper pulp and plaster cast made from a piece of a former building",
-    size: "8.5 x 9 inches",
-  },
-  {
-    img: img1194CLOSET,
-    title: "1194 Randall Avenue",
-    year: 2025,
-    materials:
-      "Oil and recovered fabric on a cotton paper pulp and plaster cast made from a piece of a former building",
-    size: "8.5 x 9 inches",
   },
   {
     img: revolt222026,
