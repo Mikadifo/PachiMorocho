@@ -48,8 +48,8 @@ export default function App() {
         ) : (
           <div className="order-2 w-full h-full">
             {route === ABOUT && <About />}
-            {route === WORKS["2025"] && <Works year={2025} />}
-            {route === WORKS["2024"] && <Works year={2024} />}
+            {route === WORKS["2026-2027"] && <Works yearGroup="2026-2027" />}
+            {route === WORKS["2024-2025"] && <Works yearGroup="2024-2025" />}
             {route === CV && <Cv />}
             {route === CONTACT && <Contact />}
           </div>

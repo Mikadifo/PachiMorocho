@@ -2,10 +2,22 @@ import arrowIcon from "./../assets/arrowIcon.webp";
 import { useRef, useState } from "react";
 import worksList from "../data/works";
 
-export default function Works({ year }) {
-  const works = worksList.filter((work) => work.year === year);
+export default function Works({ yearGroup }) {
+  const works = worksList.filter((work) => {
+    if (yearGroup === "2026-2027") return work.year === 2026 || work.year === 2027;
+    if (yearGroup === "2024-2025") return work.year === 2024 || work.year === 2025;
+    return false;
+  });
   const containerRef = useRef(null);
   const [current, setCurrent] = useState(0);
+
+  if (!works || works.length === 0) {
+    return (
+      <div className="flex items-center justify-center h-full text-white">
+        <p className="font-heading text-xl opacity-50">No works added yet for this period.</p>
+      </div>
+    );
+  }
 
   const scrollToIndex = (index) => {
     if (!containerRef.current) return;

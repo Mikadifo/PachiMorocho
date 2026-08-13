@@ -31,16 +31,16 @@ export default function Navbar({ route, setRoute }) {
               <ul className="font-thin text-base font-heading flex flex-col gap-2 ms-4 mt-2">
                 <li>
                   <button
-                    className={`${route === WORKS["2025"] ? "text-main font-normal" : "text-white hover:opacity-80 cursor-pointer"}`}
-                    onClick={() => setRoute(WORKS["2025"])}
+                    className={`${route === WORKS["2026-2027"] ? "text-main font-normal" : "text-white hover:opacity-80 cursor-pointer"}`}
+                    onClick={() => setRoute(WORKS["2026-2027"])}
                   >
                     2026 / 2027
                   </button>
                 </li>
                 <li>
                   <button
-                    className={`${route === WORKS["2024"] ? "text-main font-normal" : "text-white hover:opacity-80 cursor-pointer"}`}
-                    onClick={() => setRoute(WORKS["2024"])}
+                    className={`${route === WORKS["2024-2025"] ? "text-main font-normal" : "text-white hover:opacity-80 cursor-pointer"}`}
+                    onClick={() => setRoute(WORKS["2024-2025"])}
                   >
                     2024 / 2025
                   </button>
