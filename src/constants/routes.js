@@ -4,8 +4,8 @@ const routes = {
   CONTACT: "contact",
   CV: "cv",
   WORKS: {
-    2025: "works:2025",
-    2024: "works:2024",
+    "2026-2027": "works:2026-2027",
+    "2024-2025": "works:2024-2025",
   },
 };
 
