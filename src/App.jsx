@@ -31,11 +31,16 @@ export default function App() {
             src={suyukuna}
             alt="Suyukuna"
           />
+
+          {!hideRain && <RainStorm />}
+
+          {/*
           <img
             src={redRain}
             alt="Red Rain GIF"
             className={`-z-10 fixed inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-out ${hideRain ? "opacity-0" : "opacity-85"}`}
           />
+	    */}
         </>
       ) : (
         <div className="order-2 w-full h-full">
